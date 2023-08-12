@@ -1,6 +1,6 @@
 import React from "react"
 
-function DoggoList() {
+function Doggo() {
 
    return(
       <div id="dog-summary-container">
@@ -10,4 +10,4 @@ function DoggoList() {
    )
 }
 
-export default DoggoList
+export default Doggo
