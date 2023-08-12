@@ -54,3 +54,10 @@
 body {
   margin: 0;
 }
+
+.dogContainer {
+  border: 1px solid blue;
+  border-radius: 15px;
+  padding: 3px;
+  max-width: 70px;
+}
