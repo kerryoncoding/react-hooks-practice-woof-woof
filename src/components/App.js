@@ -1,5 +1,6 @@
 import React from "react";
 import Doggo from "./Doggo"
+import Dogbar from "./Dogbar"
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <div id="filter-div">
         <button id="good-dog-filter">Filter good dogs: OFF</button>
       </div>
-      <div id="dog-bar"></div>
+      <Dogbar />
       <Doggo />
     </div>
   );
