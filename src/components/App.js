@@ -22,17 +22,19 @@ function App() {
     setSelectedDog(singleDog[0])
   }
 
-  function updateDog(id){
-    console.log(id)
-
-
+  function updateDog(id, good){
+    console.log(id, good)
     // fetch`${URL}/${id}`, {
     //   method: "PATCH",
     //   headers: {
-    //     "Content-Type":"application/json"
+    //     "Content-Type":"application/json",
     //   },
-    //   body: JSON.stringify( isGoodDog= {!isGoodDog})
-    // },
+    //   body: JSON.stringify({
+    //     isGoodDog: !good
+    //   }),
+    // }
+    // .then(res=>res.json())
+    // .then(data => console.log(data))
   
   }
 

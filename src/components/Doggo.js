@@ -2,14 +2,15 @@ import React, {useState} from "react"
 
 function Doggo({selectedDog, updateDog}) {
 
-   // const [isGoodDog, setIsGoodDog] = useState("")
+   const [isGoodDog, setIsGoodDog] = useState("")
    console.log("this", selectedDog.id)
    console.log(selectedDog.isGoodDog)
 
 
    function flipDog() {
       console.log("flipped")
-      updateDog(selectedDog.id)
+      console.log(selectedDog.isGoodDog)
+      updateDog(selectedDog.id, selectedDog.isGoodDog)
    }
 
    if (selectedDog.id == null) {
