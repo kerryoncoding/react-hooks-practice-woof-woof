@@ -22,6 +22,20 @@ function App() {
     setSelectedDog(singleDog[0])
   }
 
+  function updateDog(id){
+    console.log(id)
+
+
+    // fetch`${URL}/${id}`, {
+    //   method: "PATCH",
+    //   headers: {
+    //     "Content-Type":"application/json"
+    //   },
+    //   body: JSON.stringify( isGoodDog= {!isGoodDog})
+    // },
+  
+  }
+
 
   return (
     <div className="App">
@@ -29,7 +43,7 @@ function App() {
         <button id="good-dog-filter">Filter good dogs: OFF</button>
       </div>
       <Dogbar dogList={dogList} displayDog={displayDog} />
-      <Doggo selectedDog={selectedDog}/>
+      <Doggo selectedDog={selectedDog} updateDog={updateDog}/>
     </div>
   );
 }
