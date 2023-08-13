@@ -1,7 +1,7 @@
 import React from "react"
 import DogItem from "./DogItem"
 
-function Dogbar({dogList}){
+function Dogbar({dogList, displayDog}){
 
    console.log(dogList)
 
@@ -9,7 +9,8 @@ function Dogbar({dogList}){
       return(
          <DogItem
          key={item.id}
-         item={item} />
+         item={item} 
+         displayDog={displayDog}/>
       )
    } )
 
